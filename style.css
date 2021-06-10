@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    overflow: hidden;
+}
+.navigation{
+    margin-top: 12px;
+    margin-bottom: 23px;
+    /* height: 70px; */
+    /*background-color: gray;*/
+    font-family: var(--font1);
+    display: flex;/*very important and useful*/
+    justify-content: space-between;/*it is the property to align the item within the flex container if the item do not use all the space available horzontally*/
+    align-items: center;
+}
+.nav-left{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-left input{
+    margin-left: 30px;
+    margin-right: 5px;
+}
+.nav-right ul{
+    display: flex;
+    align-items: center;
+    
+}
+.nav-right ul li {
+    list-style: none;/* to remove any dot or square before item*/
+    margin: 0 15px;/*to create space between each link*/
+    font-family: var(--font2);
+    font-size: 22px;
+    
+}
+.nav-right ul li a:hover{
+    color: var(--main-bg-color);
+    font-weight: bold;
+}
+.nav-right ul li a{
+    text-decoration: none;/*the underline below the link with disappear*/
+    color: black;
+}
+
+
+.content{
+    height: 100%;
+    /*background-color: #ffeecc;*/
+    display: flex;
+    padding-right: 10px;
+    position:  relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*we need to give opacity in background image which cannot be done in content container as it will give opacity to the text and img as well*/
+.content:after{
+    content: "";
+    background-image: url("img/home.svg.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.2;
+    background-size: cover;
+}
+.content-left{
+    font-family: var(--font3);
+    /*width: 50%;*/
+    padding-left:10px; ;
+    display: flex;
+    flex-direction: column;/*heading and paragragh are in different line*/
+    justify-content: center;
+    
+    z-index: 1;/*to bring the text above the image(helps for selection of text*not important*)*/
+}
+.content-left p{
+    text-align: justify;
+}
+.content-right{
+    /*width: 50%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.content-right img{
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 70%;/*to rpund the edges*/
+    margin-left: 20px;
+}
+
+.home-articles{
+    position: relative;
+    padding: 10px;
+    margin-top: 10px;
+    background-color:  hsl(40, 88%, 90%,0.15);/*aplpha=0.15 transparency*/
+}
+.year-box{
+    position: absolute;
+    width: 119px;
+    height: 73px;
+   
+    right: 40px;
+    top: 15px;
+}
+.year-box div{
+    margin: 4px 0;
+}
+.home-article{
+    display: flex;
+    padding: 10px;
+}
+.home-article img{
+    width: 200px;
+    
+    padding-right: 12px;
+    border-radius: 15%;
+    cursor: pointer;
+}
+.article-detail{
+    align-self: center;
+    padding: 20px;
+}
+.article-detail a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    height: 50px;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke
+}
+.footer a{
+    color:white;
+    text-decoration: none;
+}

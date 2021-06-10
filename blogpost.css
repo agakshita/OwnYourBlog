@@ -1,0 +1,56 @@
+.post-img{
+    height: 285px;
+    overflow: hidden;
+    
+}
+.post-img img{
+    width: 100%;
+}
+.blogpost-content{
+    /* background-color: greenyellow; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.blogpost-content h1{
+    text-align: center;
+    padding: 10px;
+}
+.blogpost-content p{
+    text-align: justify;
+    font-size: 20px;
+}
+.post-row{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+.post-row-content{
+    text-align: center;
+    margin-top: 20px;
+    background-color: hsl(40, 88%, 90%,0.15);
+}
+/*the title is coming right to the img because of flex box so in order to bring it below the img we create an extra class where we use "flex-direction"*/
+.extra-blogpost{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.blogpost-data{
+    display: flex;
+    
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.author-info{
+    margin: 10px 0;
+}
+.author-info div{
+    padding: 4px;
+    font-family: var(--font2);
+    font-size: 20px;
+}

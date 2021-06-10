@@ -1,0 +1,45 @@
+.contact-content{
+    height: 100%;
+    /*background-color: #ffeecc;*/
+    
+    padding-right: 10px;
+    position:  relative;
+    margin-top: 10px;
+    
+    overflow: hidden;/*to remove the horizontal scroll bar */
+}
+/*we need to give opacity in background image which cannot be done in content container as it will give opacity to the text and img as well*/
+.contact-content:after{
+    content: "";
+    background-image: url("img/home.svg.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;/*to bring the text inside the bakground image*/
+    width: 100%;
+    height: inherit;
+    opacity: 0.2;
+    background-size: cover;
+    z-index: -1;/*the form imput was behind the image. so to bring the image forward we have to use z index */
+}
+.contact-form{
+    padding-left: 30px;
+    
+}
+.contact-form h2{
+    margin-top: 10px;
+    margin-bottom: 13px;
+}
+.form-box1 input,textarea{
+    width: 42vw;
+    padding: 2px 3px;
+    /* margin: 5px; */
+    margin-left: 62px;
+    border-radius: 3px;
+}
+
+
+.form-radio input{
+    margin-left: 0;
+    margin-right: 0;
+    
+}

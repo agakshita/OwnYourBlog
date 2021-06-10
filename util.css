@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*To create a variable with global scope, declare it inside the :root selector. 
+The :root selector matches the document's root element.
+To create a variable with local scope, declare it inside the selector that is going to use it. */
+:root{
+    --main-bg-color: #f25f4c; 
+    --font1: 'PT Sans', sans-serif;
+    --font2: 'Crimson Text', serif;
+    --font3: 'Roboto', sans-serif;
+}
+.font1{
+    font-family: var(--font1);
+}
+.font2{
+    font-family: var(--font2);
+}
+.font3{
+    font-family: var(--font3);
+}
+.max-width1{
+    max-width: 70vw;
+}
+.max-width2{
+    max-width: 85vw;
+}
+.max-width3{
+    max-width: 20vw;
+}
+.m-auto{
+    margin: auto;/*center pe lana*/
+}
+
+.btn{
+ font-size: 15px;
+ padding: 4px 4px;
+ border: 1px solid black;
+ border-radius: 6px;/*to curve the edges*/
+font-family: var(--font3);
+cursor: pointer;/*to form a hand shape when cursor is on button*/
+ transition: all 0.3s ease-in-out;/*the background color of botton chnages gradually and not suddenly*/
+}
+.btn:hover{
+    color:white;
+    background-color: var(--main-bg-color);/*when cursor is on top of button, its colour changes*/
+}
+.form-input{
+padding: 4px 4px;
+font-size: 15px;
+border: 2px solid black;
+border-radius: 6px;
+font-family: var(--font3);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.text-center{
+    text-align: center;
+}

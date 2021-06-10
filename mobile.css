@@ -1,0 +1,60 @@
+/*media query gets excuted only at a particular width*/
+/*agar 850px se jada hoga to ye css include ani karenge*/
+@media screen and (max-width:850px){
+    .nav-left{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .navigation{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-left input{
+        margin-right: 30px;
+    }
+    .content-right{
+         display: none;/*gayab kar do img ko */
+    }
+    .home-article{
+        flex-direction: column;
+    }
+    /*image alignment to center-we can use text alignment if img is in div*/
+    .article-img{
+        text-align: center;
+        
+    }
+    .year-box{
+        top:12px;
+        font-size: 10px;
+        display: flex;
+        right: 0;
+        position: static;
+        height: auto;
+        
+    }
+
+    .year-box div{
+        margin: 0;
+        padding: 2px 6px;
+    }
+    .home-articles h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    .home-article img{
+        width: 50vw;
+    }
+    .form-box1 input,textarea{
+        margin:0;
+    }
+    .post-row{
+        flex-direction: column;
+    }
+    .post-img{
+        height: auto;
+    }
+    .author-info div{
+        padding: 0;
+    }
+}

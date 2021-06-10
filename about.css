@@ -1,0 +1,27 @@
+.about-content{
+    height: 90vh;
+    /*background-color: #ffeecc;*/
+    
+    padding-right: 10px;
+    position:  relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;/*to remove the horizontal scroll bar */
+}
+/*we need to give opacity in background image which cannot be done in content container as it will give opacity to the text and img as well*/
+.about-content:after{
+    content: "";
+    background-image: url("img/home.svg.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;/*to bring the text inside the bakground image*/
+    width: 100%;
+    height: inherit;
+    opacity: 0.2;
+    background-size: cover;
+    z-index: -1;/*the form imput was behind the image. so to bring the image forward we have to use z index */
+}
+.about-content h2,p{
+    margin-left: 13px;
+    margin-top: 20px;
+}
